@@ -1,3 +1,19 @@
 .carrusel{
-    height: 10rem;
+    
 }
+.carousel-image {
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

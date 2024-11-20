@@ -1,10 +1,23 @@
-header{
-    height: 8.5rem;
-        display: flex;
-        justify-content:space-between;
-        background-color: #333;
-}
+/* ===== Estilos del Header ===== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5rem;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo img{
+    height: 40px; /* Ajusta el tamaño del logo */
+    width: auto;
+    margin-left: 15px;
+  }
 
-.icono{
-    z-index: 1000;
-}
+  .login{
+    height: 40px;
+    width: 40px;
+    position: relative;
+
+  }

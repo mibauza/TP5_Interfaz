@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./componentes/header/header.component";
 import { CarruselComponent } from "./componentes/carrusel/carrusel.component";
-import { PrincipalComponent } from './componentes/principal/principal.component';
 import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
-//import { HeaderComponent_1 as HeaderComponent } from "./componentes/header/header.component";
-//import { CarruselComponent_1 as CarruselComponent } from "./componentes/carrusel/carrusel.component";
+import { HomeComponent } from './componentes/home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +11,6 @@ import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    PrincipalComponent,
-    NosotrosComponent,
     CarruselComponent
   ],
   templateUrl: './app.component.html',

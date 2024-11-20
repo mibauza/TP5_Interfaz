@@ -4,20 +4,29 @@
       ☰
     </button>
   </div>
-  <nav [class.active]="isMenuActive" class="menu">
+  <div class="sub-nav">
+
+    <nav [class.active]="isMenuActive" class="menu">
       <ul>
         <li>
-          <a [routerLink]="['/inicio']" routerLinkActive="router-link-active">Inicio</a>
+          <a [routerLink]="['/home']" routerLinkActive="router-link-active">HOME</a>
         </li>
         <li>
-          <a [routerLink]="['/nosotros']" routerLinkActive="router-link-active">Nuestra Historia</a>
+          <a [routerLink]="['/nosotros']" routerLinkActive="router-link-active">NOSOTROS</a>
         </li>
         <li>
-          <a [routerLink]="['/amiguitos']" routerLinkActive="router-link-active">Amiguitos</a>
+          <a [routerLink]="['/adopta']" routerLinkActive="router-link-active">ADOPTA</a>
         </li>
         <li>
-          <a [routerLink]="['/contacto']" routerLinkActive="router-link-active">Contacto</a>
+          <a [routerLink]="['/contacto']" routerLinkActive="router-link-active">CONTACTO</a>
         </li>
       </ul>
     </nav>
+    <div class="boton-login">
+      <button class="login">
+        <img src="../../assets/images/iconos/LOGIN.png" alt="" srcset="">
+      </button>
+    </div>
+
+  </div>
 </div>

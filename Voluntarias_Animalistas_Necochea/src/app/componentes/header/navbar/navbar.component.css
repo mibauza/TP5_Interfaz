@@ -24,14 +24,13 @@
   
   .menu {
     display: flex;
-    margin-right: 12rem;
+    
   }
   
   .menu ul {
     display: flex;
     list-style: none;
     font-weight: bold;
-    margin: 10px;
     padding: 0;
   }
   
@@ -42,7 +41,7 @@
   .menu a {
     text-decoration: none;
     padding: 15px 20px;
-    margin: 0 10px;
+    margin: 0 25px;
     border-radius: 10px;
     color: #c99dc6;
 
@@ -52,10 +51,15 @@
     background-color: #453c45;
   }
   
-  .icono img, .login img {
+  .login img {
     width: 30px;
     height: 30px;
   }
+
+  .boton-login{
+    margin: 0 25px;
+  }
+
   
   /* ===== Estilos Responsivos ===== */
   @media (max-width: 768px) {

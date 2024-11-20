@@ -3,16 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 5rem;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
+    min-height: 2rem;
+    min-width: 100vw;
   }
   
   .logo img{
-    height: 40px; /* Ajusta el tamaño del logo */
+    height: auto; /* Ajusta el tamaño del logo */
     width: auto;
-    margin-left: 15px;
   }
 
   .login{

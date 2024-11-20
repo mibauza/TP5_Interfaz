@@ -11,20 +11,30 @@ import { Component } from '@angular/core';
 export class CarruselComponent {
   slides = [
     {
-      image: 'https://via.placeholder.com/800x400?text=Slide+1',
+      image: '../../assets/animales/amiguitos.jpeg',
       title: 'Slide 1',
       text: 'This is the first slide.',
     },
     {
-      image: 'https://via.placeholder.com/800x400?text=Slide+2',
+      image: '../../assets/animales/perro1.jpg',
       title: 'Slide 2',
       text: 'This is the second slide.',
     },
     {
-      image: 'https://via.placeholder.com/800x400?text=Slide+3',
+      image: '../../assets/animales/perro2.jpg',
       title: 'Slide 3',
       text: 'This is the third slide.',
-    },
+    }
   ];
 
+  currentIndex = 0;
+
+  nextSlide(): void {
+    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+  }
+
+  prevSlide(): void {
+    this.currentIndex =
+      (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+  }
 }

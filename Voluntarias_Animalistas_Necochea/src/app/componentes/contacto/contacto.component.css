@@ -1,9 +1,73 @@
-.contacto, form{
+.contacto {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+    height:100%; /* Ajusta la altura según el contenido */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    background-color: #e5cae5;
+    padding: 250px 0;
+    
+}
+.main-contacto{
+    display: flex; /* Crea un diseño de flexbox */
+    flex-direction: row; /* Coloca los elementos uno al lado del otro */
+    width: 80%; /* Asegura que ocupe todo el ancho de la ventana */
+    height: 80%; /* Ajusta la altura según el contenido */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    margin-bottom:100px;
+    border-radius: 10px;   
+    padding: 50px 0 50px 0;
+}
+.contenido,
+.formulario {
+    flex: 1; /* Cada div ocupa la mitad del espacio disponible */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
-form{
-    width: 20rem;
+.contenido {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra el texto opcionalmente */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el formulario */
+    align-items: center; /* Centra horizontalmente el formulario */
+}
+
+form {
+    width: 100%; /* Asegura que el formulario se ajuste al contenedor */
+    max-width: 400px; /* Tamaño máximo del formulario */
+    display: flex;
+    flex-direction: column;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    height: 30px;
+    border-radius: 10px;
+    width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+}
+
+form button {
+    background-color: #3de534;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100px;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el cursor */
 }

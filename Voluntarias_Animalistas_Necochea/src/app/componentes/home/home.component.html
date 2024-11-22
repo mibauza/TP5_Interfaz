@@ -1,9 +1,12 @@
 <div class="principal">
-    <app-carrusel/>
-    
-    <div>
-       
-       
+    <app-carrusel></app-carrusel>
+    <div class="contenido" *ngFor="let elemento of elementos">
+        <div class="elemento">
+            <div>
+                <img [src]="elemento.img" alt="Imagen de {{elemento.texto}}">
+            </div>
+            <p>{{elemento.texto}}</p>
+        </div>
     </div>
 </div>
 

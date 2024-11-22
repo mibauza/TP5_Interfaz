@@ -3,12 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 2rem;
-    min-width: 100vw;
+    height: 5rem;
+    width: 100%;
   }
   
   .logo img{
-    height: auto; /* Ajusta el tamaño del logo */
+   height: 5rem; /* Ajusta el tamaño del logo */
     width: auto;
   }
 

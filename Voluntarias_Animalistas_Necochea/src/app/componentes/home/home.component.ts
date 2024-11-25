@@ -11,8 +11,8 @@ import { NgFor } from '@angular/common';
 })
 export class HomeComponent {
   elementos = [
-    { img: '../../assets/animales/amiguitos.jpeg', texto: 'Primer elemento' },
-    { img: '../../assets/animales/perro1.jpg', texto: 'Segundo elemento' },
-    { img: '../../assets/animales/perro2.jpg', texto: 'Tercer elemento' }
+    { img: '../../assets/animales/home1.jpg', texto: 'Primer elemento' },
+    { img: '../../assets/animales/home2.jpg', texto: 'Segundo elemento' },
+    { img: '../../assets/animales/home3.jpg', texto: 'Tercer elemento' }
   ];
 }

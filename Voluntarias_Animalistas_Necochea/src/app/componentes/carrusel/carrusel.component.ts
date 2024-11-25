@@ -11,17 +11,17 @@ import { Component } from '@angular/core';
 export class CarruselComponent {
   slides = [
     {
-      image: '../../assets/animales/amiguitos.jpeg',
+      image: '../../assets/animales/home1.jpg',
       title: 'Slide 1',
       text: 'This is the first slide.',
     },
     {
-      image: '../../assets/animales/perro1.jpg',
+      image: '../../assets/animales/home2.jpg',
       title: 'Slide 2',
       text: 'This is the second slide.',
     },
     {
-      image: '../../assets/animales/perro2.jpg',
+      image: '../../assets/animales/home3.jpg',
       title: 'Slide 3',
       text: 'This is the third slide.',
     }

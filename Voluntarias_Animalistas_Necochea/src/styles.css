@@ -5,9 +5,23 @@
 
 body{
     min-height: 100vw;
-    font-family: Arial, sans-serif;
 }
 
-a{
-    font-family: "Raleway", Sans-serif;
+p{
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    color: #111;
+    line-height: 1.2;
+  }
+
+  a {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: none;
+  }

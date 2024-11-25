@@ -1,34 +1,23 @@
 /* Contenedor principal que envuelve todo */
-.container {
- 
-  min-height: 100vh; /* Asegura que ocupe al menos una pantalla completa */
+.nosotros {
+  position: relative;
+  width: 100%;
+  background-color: #e5cae5;
 }
 
-.seccion-imagen img{
+.nosotros-imagen{
+  
+  position: relative;
+ 
+}.nosotros-imagen img{
   min-width:auto;
   height:80vh;
   width: 99vw;
   display: block;
 }
-/* Sección de contenido */
-.nosotros {
-  flex: 1; /* Hace que esta sección crezca para llenar el espacio restante */
-  width: 100%;
-  background-color: #e5cae5;
-  
-  justify-content: center;
-  align-items: center;
-}
+
 
 .principal{
   width: 85%;
   margin: auto;
-}
-/* Estilo del párrafo */
-p {
-  color: #4F266A;
-  margin: 0;
-  padding: 150px 100px 300px 100px;
-  font-size: x-large;
-  text-align: justify; /* Opcional: alineación del texto */
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./componentes/header/header.component";
 import { HttpClientModule,  } from '@angular/common/http';
+import { FooterComponent } from "./footer/footer.component";
 
 
 @Component({
@@ -11,8 +12,8 @@ import { HttpClientModule,  } from '@angular/common/http';
     RouterOutlet,
     HeaderComponent,
     HttpClientModule,
-
-  ],
+    FooterComponent
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

@@ -1,15 +1,42 @@
 .footer {
     background-color: #94779A;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     padding: 20px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Alinea verticalmente */
   }
   
   .footer-content p {
     margin: 5px 0;
     font-size: 14px;
   }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Alinea los dos divs dentro de .footer-content */
+    width: 100%;
+    max-width: 1200px; /* Esto puede ajustarse a tu gusto */
+  }
   
+  .div-email {
+    text-align: left; /* Alinea el contenido del div a la izquierda */
+  }
+  
+  .social-icons {
+    text-align: right; /* Alinea el contenido del div a la derecha */
+  }
+  
+  .social-icons a {
+    margin: 0 10px; /* Espacio entre los iconos */
+  }
+  
+  .social-icons img {
+    width: 25px; /* Tamaño de los iconos */
+    height: 25px;
+  }

@@ -13,14 +13,14 @@ p{
     line-height: 1.6;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Josefin Sans', 'Playfair Display', Georgia, serif;
     font-weight: bold;
     color: #111;
     line-height: 1.2;
   }
 
   a {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Josefin Sans','Roboto', Helvetica, sans-serif;
     font-weight: 500;
     color: #007bff;
     text-decoration: none;

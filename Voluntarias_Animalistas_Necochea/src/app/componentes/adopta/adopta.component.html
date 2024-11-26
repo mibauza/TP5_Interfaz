@@ -1,10 +1,24 @@
 <div class="adopta">
     <div class="presentacion">
-        <div>
-            <img src="../../../assets/animales/nosotros.jpg" alt="" srcset="">
-        </div>
-        <div class="elemento">
 
+        <img src="../../../assets/animales/home4.jpg" alt="Imagen de presentación">
+
+        <div class="animales">
+            <!-- Recorriendo los elementos -->
+            <div *ngFor="let animal of elementos" class="elemento">
+                <div>
+                    <img [src]="animal.imagen" alt="{{animal.nombre}}">
+                </div>
+                <div class="info">
+                    <h1>Nombre: {{animal.nombre}}</h1>
+                    <h2>Tipo: {{animal.tipo}}</h2>
+                    <h2>Edad: {{animal.edad}}</h2>
+                    <h2>Género: {{animal.genero}}</h2>
+                    <h2>Estado: {{animal.estado}}</h2>
+                    <h3>Descripción de la personalidad:</h3>
+                    <p [innerHTML]="animal.desc_personalidad"></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

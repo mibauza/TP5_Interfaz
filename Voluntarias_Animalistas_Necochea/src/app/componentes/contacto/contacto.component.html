@@ -1,20 +1,21 @@
 <div class="contacto">
     <div class="main-contacto">
         <div class="contenido">
-            <p>texto de contacto</p>
             <div>
-                <img src="" alt="perrito con telefono" srcset="">
+                <img src="../../../assets/contacto/perroTelefono.jpg" alt="perrito con telefono" srcset="">
+                <p>texto de contacto</p>
             </div>
         </div>
         <div class="formulario">
-            <form>
+            <form [formGroup]="formulario" (submit)="onSubmit()">
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="nombre" name="nombre" formControlName="nombre" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" formControlName="email"required>
                 <label for="message">Mensaje:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Enviar</button>
+                <button type="button" (click)="guardar()">guardar</button>
+                <button type="submit" [disabled]="formulario.invalid">Enviar</button>
             </form>
         </div>
     

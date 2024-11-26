@@ -1,11 +1,37 @@
-.presentacion{
-    display: flex;
-    flex-direction: column;
+.adopta {
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.presentacion img{
-    min-width:auto;
-  height:80vh;
-  width: 99vw;
+.presentacion img {
   display: block;
+  width: 99vw;
+}
+
+.animales {
+  display: flex;
+  flex-wrap:nowrap;
+  width: 100%;
+}
+
+.elemento {
+ width: 300px;
+ max-width: 50vw;
+ height: 300px;
+ padding:50px;
+  box-sizing: border-box;
+}
+
+.elemento img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.info {
+  text-align:left;
+  margin-top: 25px;
+}
+
+.info h1, .info h2, .info h3, .info p {
+  margin: 5px 0;
 }

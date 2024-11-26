@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./componentes/header/header.component";
-import { CarruselComponent } from "./componentes/carrusel/carrusel.component";
-import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
-import { HomeComponent } from './componentes/home/home.component';
+import { HttpClientModule,  } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,8 @@ import { HomeComponent } from './componentes/home/home.component';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    CarruselComponent
+    HttpClientModule,
+
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -1,41 +1,75 @@
+/* Contenedor principal */
 .principal {
-    min-height: 50vh;
-    width: 100%;
-    
-    background-color: #e5cae5;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Opcional, alinea el contenido centrado horizontalmente */
+  min-height: 100vh; /* Ocupa toda la pantalla */
+  width: 100%;
+  background-color: #e5cae5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Espaciado desde el inicio */
+  padding: 20px 0; /* Espaciado superior e inferior */
+  box-sizing: border-box;
 }
 
+/* Contenedor de elementos */
+.principal-elementos {
+  display: flex; /* Alinea los elementos en una fila */
+  flex-wrap: wrap; /* Permite que bajen a otra fila si no hay suficiente espacio */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 30px; /* Espaciado uniforme entre elementos */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  max-width: 1200px; /* Ancho mÃ¡ximo para el diseÃ±o */
+  padding: 0 20px; /* Espaciado interno horizontal */
+  box-sizing: border-box;
+}
+
+/* Estilo para cada contenido */
 .contenido {
-    display: flex;
-    flex-wrap:wrap; /* Permite que los elementos se ajusten automáticamente a nuevas filas */
-    justify-content: center; /* Opcional, centra los elementos horizontalmente */
-    gap: 30px; /* Espaciado uniforme entre los elementos */
-    margin-top: 20px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 calc(33.33% - 30px); /* Divide el ancho en tres columnas con espacio uniforme */
+  max-width: 400px; /* TamaÃ±o mÃ¡ximo para cada elemento */
+  box-sizing: border-box;
 }
 
+/* Contenedor individual de cada imagen y texto */
 .elemento {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 400px; /* Tamaño fijo del ancho */
-    height: 400px; /* Tamaño fijo del alto */
-    margin: 20px; /* Margen individual innecesario porque ya se usa `gap` en el contenedor */
-    padding: 20px;
-    overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  overflow: hidden; /* Evita desbordamientos */
 }
 
+/* ImÃ¡genes */
 .elemento img {
-    
-    border-radius: 15px;
-    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Ajusta la imagen para cubrir todo el área disponible */
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 250px; /* Altura fija para uniformar todas las imÃ¡genes */
+  object-fit: cover; /* Asegura que las imÃ¡genes cubran todo el espacio sin deformarse */
+  border-radius: 10px; /* Bordes ligeramente redondeados */
 }
 
-p{
-    color: #4F266A;
+/* Texto */
+.elemento p {
+  width: 200px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4F266A;
+  text-align: center; /* Centra el texto debajo de las imÃ¡genes */
+}
+
+/* Asegura que el texto no quede oculto debajo del footer */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa toda la pantalla */
+  box-sizing: border-box;
+}
+
+.principal {
+  flex: 1;
 }

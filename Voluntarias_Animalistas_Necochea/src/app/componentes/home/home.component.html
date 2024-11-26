@@ -1,11 +1,13 @@
 <div class="principal">
     <app-carrusel></app-carrusel>
-    <div class="contenido" *ngFor="let elemento of elementos">
-        <div class="elemento">
-            <div>
-                <img [src]="elemento.img" alt="Imagen de {{elemento.texto}}">
+    <div class="principal-elementos">
+        <div class="contenido" *ngFor="let elemento of elementos">
+            <div class="elemento">
+                <div>
+                    <img [src]="elemento.img" alt="Imagen de {{elemento.texto}}">
+                </div>
+                <p>{{elemento.texto}}</p>
             </div>
-            <p>{{elemento.texto}}</p>
         </div>
     </div>
 </div>

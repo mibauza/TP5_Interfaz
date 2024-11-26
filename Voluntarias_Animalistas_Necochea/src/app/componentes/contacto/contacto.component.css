@@ -9,7 +9,7 @@
     background-color: #e5cae5;
     padding: 250px 0;
     
-}
+}   
 .main-contacto{
     display: flex; /* Crea un diseño de flexbox */
     flex-direction: row; /* Coloca los elementos uno al lado del otro */
@@ -28,7 +28,9 @@
 }
 
 .contenido {
-  
+    transform: scale(0.8); /* Esto reduce la imagen al 80% de su tamaño original */
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible */
+    height: auto; /* Mantiene las proporciones de la imagen */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +62,7 @@ form button {
 }
 
 form button {
-    background-color: #3de534;
+    background-color: #4F266A;
     color: white;
     border: none;
     cursor: pointer;
@@ -70,4 +72,8 @@ form button {
 
 form button:hover {
     background-color: #0056b3; /* Cambia el color al pasar el cursor */
+}
+
+.contenido p {
+    font-size: 1.5em; /* Aumentar el tamaño del texto al 150% */
 }

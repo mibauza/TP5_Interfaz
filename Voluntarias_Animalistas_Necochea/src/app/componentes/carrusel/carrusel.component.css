@@ -12,8 +12,8 @@
 }
 
 .carousel-image {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 80vw;
   object-fit: cover; /* Asegura que la imagen cubra el espacio disponible */
 }
 

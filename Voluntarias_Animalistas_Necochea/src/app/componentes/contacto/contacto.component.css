@@ -77,3 +77,9 @@ form button:hover {
 .contenido p {
     font-size: 1.5em; /* Aumentar el tamaño del texto al 150% */
 }
+
+/* Añadir un borde rojo a los inputs con error */
+.input-error {
+    border: 2px solid red;
+  }
+  

@@ -1,36 +1,44 @@
 .adopta {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.presentacion img {
-  display: block;
-  width: 99vw;
-}
-
-.animales {
   display: flex;
-  flex-wrap:nowrap;
-  width: 100%;
+  width: 100vw;
+  flex-direction: column;
 }
+
+.adoptaImagen img{
+  height: 60vh;
+  width: 100vw;
+  object-fit: contain;
+}
+.elemento img{
+  height: 50%;
+  width: 50%;
+}
+.animales{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
 
 .elemento {
- width: 300px;
- max-width: 50vw;
- height: 300px;
- padding:50px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;;
+  height: 300px;
+  
 }
 
 .elemento img {
+  height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-.info {
-  text-align:left;
-  margin-top: 25px;
+.adopta .animales .elemento .info {
+  text-align:left; /* Centra el texto debajo de cada imagen */
 }
+
 
 .info h1, .info h2, .info h3, .info p {
   margin: 5px 0;

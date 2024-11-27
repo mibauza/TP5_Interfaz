@@ -8,7 +8,7 @@ import { Animal } from '../modelo/animal';
 })
 export class ApiAnimalesService {
  
-  URL:string = 'https://huachitos.cl/api/animales/';
+  URL:string = 'https://huachitos.cl/api/animales/tipo/perro';
 
     constructor(private http: HttpClient) { }
   

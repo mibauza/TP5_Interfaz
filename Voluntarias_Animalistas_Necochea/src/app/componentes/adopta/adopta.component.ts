@@ -17,10 +17,13 @@ export class AdoptaComponent implements OnInit {
   
   elementos: Animal[] = [];
   
+  elementosLimitados: any[] = [];
   constructor(private apiAnimales: ApiAnimalesService) {}
 
   ngOnInit(): void {
     this.loadItems();
+    this.elementosLimitados = this.elementos.slice(0, 18);
+
   }
 
   loadItems(): void {

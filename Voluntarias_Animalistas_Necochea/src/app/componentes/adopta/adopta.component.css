@@ -3,35 +3,44 @@
   box-sizing: border-box;
 }
 
+.presentacion {
+  width: 100%; /* Asegura que ocupe el ancho completo */
+}
+
 .presentacion img {
+  width: 100vw; /* Ocupa el ancho total de la pantalla */
+  height: 80vh; /* Fija la altura */
+  object-fit: cover; /* Asegura que la imagen llene el espacio sin deformarse */
   display: block;
-  width: 99vw;
+  margin-bottom: 20px; /* Espaciado entre la imagen y los animales */
+}
+
+/* Estilos para las imágenes dentro de la sección animales */
+.animales img {
+  width: 100%; /* Imagen ocupa todo el ancho del elemento */
+  object-fit: contain; /* Mantiene proporciones sin deformar */
 }
 
 .animales {
   display: flex;
-  flex-wrap:nowrap;
-  width: 100%;
+  flex-wrap: wrap; /* Permite que los elementos ocupen varias filas si es necesario */
+  justify-content: center; /* Centra los elementos en el contenedor */
+  gap: 20px; /* Espacio entre los elementos */
+  padding: 20px;
 }
 
 .elemento {
- width: 300px;
- max-width: 50vw;
- height: 300px;
- padding:50px;
+  width: calc(33% - 20px); /* Ajusta para que quepan tres elementos por fila */
+  max-width: 300px; /* Límite de ancho */
   box-sizing: border-box;
 }
 
-.elemento img {
-  width: 100%;
-  object-fit: contain;
-}
-
 .info {
-  text-align:left;
-  margin-top: 25px;
+  text-align: left;
+  margin-top: 15px;
 }
 
 .info h1, .info h2, .info h3, .info p {
   margin: 5px 0;
 }
+

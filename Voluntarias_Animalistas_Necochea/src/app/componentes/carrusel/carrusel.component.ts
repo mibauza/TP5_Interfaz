@@ -24,6 +24,11 @@ export class CarruselComponent {
       image: '../../assets/carrusel/3.jpg',
       title: 'Slide 3',
       text: 'This is the third slide.',
+    },
+    {
+      image: '../../assets/carrusel/4.jpg',
+      title: 'Slide 3',
+      text: 'This is the third slide.',
     }
   ];
 

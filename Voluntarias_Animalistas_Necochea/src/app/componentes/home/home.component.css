@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 
+
 /* Contenedor de elementos */
 .principal-elementos {
   display: flex; /* Alinea los elementos en una fila */
@@ -28,11 +29,21 @@
   margin: 50px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Alinea los elementos al inicio del eje vertical */
   flex: 1 1 calc(33.33% - 30px); /* Divide el ancho en tres columnas con espacio uniforme */
-  max-width: 400px; /* TamaÃ±o mÃ¡ximo para cada elemento */
+  max-width: 400px; /* Tamaño máximo para cada elemento */
+  height: auto; /* Altura fija para uniformar los contenedores */
   box-sizing: border-box;
 }
+
+/* Imágenes */
+.elemento img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ajusta la altura al tamaño del contenedor padre */
+  object-fit: cover; /* Asegura que las imágenes llenen el espacio sin deformarse */
+  border-radius: 10px; /* Bordes ligeramente redondeados */
+}
+
 
 /* Contenedor individual de cada imagen y texto */
 .elemento {
@@ -43,13 +54,6 @@
   overflow: hidden; /* Evita desbordamientos */
 }
 
-/* ImÃ¡genes */
-.elemento img {
-  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-  height: 250px; /* Altura fija para uniformar todas las imÃ¡genes */
-  object-fit: cover; /* Asegura que las imÃ¡genes cubran todo el espacio sin deformarse */
-  border-radius: 10px; /* Bordes ligeramente redondeados */
-}
 
 /* Texto */
 .elemento p {

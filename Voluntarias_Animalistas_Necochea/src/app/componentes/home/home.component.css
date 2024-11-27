@@ -175,7 +175,7 @@ footer {
 
 .adopta img {
   width: 50%; /* Imagen ocupa el 50% del ancho */
-  border-radius: 15px;
+  border-radius: 50%;
   object-fit: cover; /* Ajuste de imagen */
 }
 

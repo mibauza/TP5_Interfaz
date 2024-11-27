@@ -77,3 +77,124 @@ body {
 .principal {
   flex: 1;
 }
+
+
+/* Fondo y espaciado de la sección "conocenos" */
+.conocenos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre las secciones internas */
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 50px; /* Agregar margen inferior para separar del footer */
+  padding: 100px 40px; /* Espaciado interno */
+  box-sizing: border-box;
+  background-color: #fbe9f1; /* Fondo más claro (usando la paleta existente) */
+  /*border-radius: 15px; /* Bordes redondeados para suavizar el diseño */
+  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar */
+}
+
+
+
+/* Estilo para el logo */
+.logo2 {
+  flex: 1; /* Ocupa el 50% del espacio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo2 img {
+  width: 55%; /* Hacer que el logo ocupe todo el ancho del contenedor */
+  height: auto; /* Mantener la proporción */
+  border-radius: 50%; /* Mantener forma circular */
+  object-fit: cover; /* Asegurar que se ajuste al espacio */
+}
+
+
+/* Estilo para el contenido */
+.contenido2 {
+  flex: 1; /* Ocupa el otro 50% */
+  text-align: left;
+}
+
+.contenido2 h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3d4b63; /* Color del título */
+}
+
+.contenido2 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #3d4b63; /* Color del botón */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #2b3649; /* Color al pasar el mouse */
+}
+
+
+
+
+/* Opcional: Ajustar el contenido visual del footer para mantener el espaciado */
+footer {
+  margin-top: 800px; /* Agregar un espacio consistente con la separación */
+}
+
+.adopta {
+  display: flex;
+  height: 451px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre imagen y texto */
+  width: 100%;
+  max-width: 100%;
+  /*margin: 50px auto; /* Centrado y separación con otras secciones */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #e5cae5; /* Fondo claro */
+  /*border-radius: 15px; /* Bordes redondeados */
+  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  margin-bottom: 50px;
+}
+
+.adopta img {
+  width: 50%; /* Imagen ocupa el 50% del ancho */
+  border-radius: 15px;
+  object-fit: cover; /* Ajuste de imagen */
+}
+
+.adopta-texto {
+  width: 50%; /* Texto ocupa el 50% del ancho */
+  text-align: left;
+}
+
+.adopta-texto h2 {
+  font-size: 2rem;
+  color: #2d3e50; /* Color del título */
+  margin-bottom: 15px;
+}
+
+.adopta-texto p {
+  font-size: 1rem;
+  color: #495867;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+

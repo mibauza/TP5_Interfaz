@@ -9,11 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 80vh; /* Fija la altura del contenedor */
+  background-color: #000; /* Opcional: color de fondo para cuando la imagen no llena todo */
 }
 
 .carousel-image {
-  width: 100vw;
-  height: 80vw;
+  width: 100%;
+  height: auto;
   object-fit: cover; /* Asegura que la imagen cubra el espacio disponible */
 }
 

@@ -1,23 +1,18 @@
-/* Contenedor principal que envuelve todo */
 .nosotros {
-  position: relative;
   width: 100%;
   background-color: #e5cae5;
 }
 
-.nosotros-imagen{
-  
-  position: relative;
- 
-}.nosotros-imagen img{
-  min-width:auto;
-  height:80vh;
-  width: 99vw;
+.nosotros-imagen img {
+  width: 100vw; /* Ancho total de la pantalla */
+  height: 80vh; /* Altura fija */
+  object-fit: cover; /* Imagen llena el contenedor */
   display: block;
 }
 
-
-.principal{
+.principal {
   width: 85%;
   margin: auto;
+  padding: 20px 0;
+  text-align: justify;
 }

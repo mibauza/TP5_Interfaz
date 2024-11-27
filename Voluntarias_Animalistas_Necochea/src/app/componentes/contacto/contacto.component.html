@@ -1,31 +1,31 @@
 <div class="contacto">
+  <div class="contacto-imagen">
+    <img src="../../../assets/estaticas/contacto.jpg" alt="Contacto">
+  </div>  
   <div class="main-contacto">
-    <div class="contenido">
-      <div>
-        <p>Si tenés alguna duda sobre el proceso de adopción, crianza responsable o cualquier otro asunto que te podamos ayudar, contactános!</p>
-        <img src="../../../assets/contacto/perroContacto.png" alt="perrito con telefono">
+      <div class="contenido">
+        <div>
+          <p>Si tenés alguna duda sobre el proceso de adopción, crianza responsable o cualquier otro asunto que te podamos ayudar, contactános!</p>
+          <img src="../../../assets/contacto/perroContacto.png" alt="perrito con telefono" srcset="">
+        </div>
+      </div>
+      <div class="formulario">
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+          <label for="nombreApellido">Nombre y apellido:</label>
+          <input type="text" id="nombreApellido" formControlName="nombreApellido" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email" required>
+  
+          <label for="whatsapp">Whatsapp:</label>
+          <textarea id="whatsapp" formControlName="whatsapp" required></textarea>
+  
+          <label for="consulta">Consulta:</label>
+          <textarea id="consulta" formControlName="consulta" required></textarea>
+  
+          <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+        </form>
       </div>
     </div>
-    <div class="formulario">
-      <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-        <label for="nombreApellido">Nombre y apellido:</label>
-        <input type="text" id="nombreApellido" formControlName="nombreApellido"
-          [ngClass]="{'input-error': formulario.get('nombreApellido')?.invalid && formulario.get('nombreApellido')?.touched}">
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" formControlName="email"
-          [ngClass]="{'input-error': formulario.get('email')?.invalid && formulario.get('email')?.touched}">
-        
-        <label for="whatsapp">Whatsapp:</label>
-        <textarea id="whatsapp" formControlName="whatsapp"
-          [ngClass]="{'input-error': formulario.get('whatsapp')?.invalid && formulario.get('whatsapp')?.touched}"></textarea>
-        
-        <label for="consulta">Consulta:</label>
-        <textarea id="consulta" formControlName="consulta"
-          [ngClass]="{'input-error': formulario.get('consulta')?.invalid && formulario.get('consulta')?.touched}"></textarea>
-        
-        <button type="submit" [disabled]="!formulario.valid" formControlName="submit">Enviar</button>
-      </form>
-    </div>
   </div>
-</div>
+  

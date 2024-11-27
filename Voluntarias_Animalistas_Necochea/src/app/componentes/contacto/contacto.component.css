@@ -4,22 +4,29 @@
     flex-direction: column;
     align-items: center;
     width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
-    height:100%; /* Ajusta la altura según el contenido */
+    height: 100%; /* Ajusta la altura según el contenido */
     box-sizing: border-box; /* Incluye padding y border en el tamaño total */
     background-color: #e5cae5;
-    padding: 250px 0;
-    
-}   
-.main-contacto{
+}
+
+.contacto-imagen img {
+    width: 100vw; /* Ocupar todo el ancho de la pantalla */
+    height: 80vh; /* Altura específica */
+    object-fit: cover; /* Ajuste proporcional */
+    display: block;
+}
+
+.main-contacto {
     display: flex; /* Crea un diseño de flexbox */
     flex-direction: row; /* Coloca los elementos uno al lado del otro */
     width: 80%; /* Asegura que ocupe todo el ancho de la ventana */
     height: 80%; /* Ajusta la altura según el contenido */
     box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-    margin-bottom:100px;
-    border-radius: 10px;   
-    padding: 50px 0 50px 0;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 50px 0;
 }
+
 .contenido,
 .formulario {
     flex: 1; /* Cada div ocupa la mitad del espacio disponible */

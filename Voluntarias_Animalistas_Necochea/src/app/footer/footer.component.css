@@ -21,7 +21,6 @@
     display: flex;
     justify-content: space-between; /* Alinea los dos divs dentro de .footer-content */
     width: 100%;
-    max-width: 1200px; /* Esto puede ajustarse a tu gusto */
   }
   
   .div-email {

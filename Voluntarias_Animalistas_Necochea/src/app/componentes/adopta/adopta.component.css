@@ -1,38 +1,53 @@
 .adopta {
   width: 100%;
-  box-sizing: border-box;
+  background-color: #e5cae5;
 }
 
-.presentacion {
-  width: 100%; /* Asegura que ocupe el ancho completo */
-}
-
-.presentacion img {
-  width: 100vw; /* Ocupa el ancho total de la pantalla */
-  height: 80vh; /* Fija la altura */
-  object-fit: cover; /* Asegura que la imagen llene el espacio sin deformarse */
+.adoptaImagen img {
+  width: 100%; /* Ancho total de la pantalla */
+  height: 80vh; /* Altura fija */
+  object-fit: cover; /* Imagen llena el contenedor */
   display: block;
-  margin-bottom: 20px; /* Espaciado entre la imagen y los animales */
-}
-
-/* Estilos para las imágenes dentro de la sección animales */
-.animales img {
-  width: 100%; /* Imagen ocupa todo el ancho del elemento */
-  object-fit: contain; /* Mantiene proporciones sin deformar */
 }
 
 .animales {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos ocupen varias filas si es necesario */
-  justify-content: center; /* Centra los elementos en el contenedor */
-  gap: 20px; /* Espacio entre los elementos */
-  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding: 30px;
+  display: flex; /* Alinea los elementos en una fila */
+  flex-wrap: wrap; /* Permite que bajen a otra fila si no hay suficiente espacio */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 75px; /* Espaciado uniforme entre elementos */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  box-sizing: border-box;
 }
 
-.elemento {
-  width: calc(33% - 20px); /* Ajusta para que quepan tres elementos por fila */
-  max-width: 300px; /* Límite de ancho */
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea los elementos al inicio del eje vertical */
+  max-width: 400px; /* Tamaño máximo para cada elemento */
+  height: auto; /* Altura automática para que el contenido ajuste su altura */
   box-sizing: border-box;
+}
+.elemento {
+  margin-bottom: 50px;
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  max-width: 400px; /* Ancho máximo para cada elemento */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido hacia el inicio del contenedor */
+  align-items: center;
+  overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.elemento img {
+  border-radius: 10px;
+  width: 300px; /* Las imágenes ocuparán todo el ancho del contenedor */
+  height: 300px; /* Fijamos una altura consistente para todas las imágenes */
+  object-fit: cover; /* Asegura que las imágenes llenen el contenedor sin deformarse */
 }
 
 .info {
@@ -40,7 +55,13 @@
   margin-top: 15px;
 }
 
-.info h1, .info h2, .info h3, .info p {
-  margin: 5px 0;
+.info h2{
+  color: #4F266A;
+  font-weight: 500;
+}
+
+span, .info p{
+ font-size: 25px;
+ color: black !important;
 }
 

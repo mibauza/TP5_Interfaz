@@ -1,23 +1,24 @@
 <div class="adopta">
     <div class="adoptaImagen">
-
         <img src="../../../assets/animales/home4.jpg" alt="Imagen de presentación">
     </div>
-   
+
     <div class="animales">
         <!-- Renderiza los elementos dinámicamente -->
-        <div *ngFor="let animal of elementosLimitados" class="elemento">
-           
-            <img [src]="animal.imagen" alt="{{animal.nombre}}">
-           
-            <div class="info">
-                <h1>Nombre: {{animal.nombre}}</h1>
-                <h2>Tipo: {{animal.tipo}}</h2>
-                <h2>Edad: {{animal.edad}}</h2>
-                <h2>Género: {{animal.genero}}</h2>
-                <h2>Estado: {{animal.estado}}</h2>
-                <h3>Descripción de la personalidad:</h3>
-                <p [innerHTML]="animal.desc_personalidad"></p>
+        <div class="contenido" *ngFor="let animal of elementosLimitados">
+            <div class="elemento">
+                <div>
+                    <img [src]="animal.imagen" alt="{{animal.nombre}}">
+                </div>
+
+                <div class="info">
+                    <h2>Nombre: <span>{{animal.nombre}}</span></h2>
+                    <h2>Tipo: <span>{{animal.tipo}}</span></h2>
+                    <h2>Edad: <span>{{animal.edad}}</span></h2>
+                    <h2>Género: <span>{{animal.genero}}</span></h2>
+                    <h2>Estado: <span>{{animal.estado}}</span></h2>
+                    <a target="_blank" href="https://huachitos.cl/animal/300-flaco">Ver Fuente</a>
+                </div>
             </div>
         </div>
     </div>

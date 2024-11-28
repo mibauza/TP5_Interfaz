@@ -19,7 +19,6 @@
   justify-content: center; /* Centra los elementos horizontalmente */
   gap: 30px; /* Espaciado uniforme entre elementos */
   width: 100%; /* Ocupa todo el ancho del contenedor */
-  max-width: 1200px; /* Ancho mÃ¡ximo para el diseÃ±o */
   /* padding: 0 20px; Espaciado interno horizontal */
   box-sizing: border-box;
 }
@@ -86,7 +85,6 @@ body {
   justify-content: center;
   gap: 20px; /* Espaciado entre las secciones internas */
   width: 100%;
-  max-width: 100%;
   margin: 0 auto 50px; /* Agregar margen inferior para separar del footer */
   padding: 100px 40px; /* Espaciado interno */
   box-sizing: border-box;
@@ -163,14 +161,12 @@ footer {
   justify-content: center;
   gap: 20px; /* Espaciado entre imagen y texto */
   width: 100%;
-  max-width: 100%;
   /*margin: 50px auto; /* Centrado y separación con otras secciones */
   padding: 40px 20px;
   box-sizing: border-box;
   background-color: #e5cae5; /* Fondo claro */
   /*border-radius: 15px; /* Bordes redondeados */
   /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  margin-bottom: 50px;
 }
 
 .adopta img {

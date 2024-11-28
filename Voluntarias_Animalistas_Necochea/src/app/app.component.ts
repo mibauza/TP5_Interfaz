@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./componentes/header/header.component";
-import { HttpClientModule,  } from '@angular/common/http';
+import { FetchBackend, HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from "./footer/footer.component";
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -15,10 +15,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     FooterComponent,
     ReactiveFormsModule
-
 ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers:[FetchBackend]
 })
 export class AppComponent {
   title = 'Voluntarias_Animalistas_Necochea';

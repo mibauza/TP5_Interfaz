@@ -25,14 +25,12 @@ export class ContactoComponent implements OnInit {
   }
   ngOnInit(): void {
     console.log(this.formulario.valid)
-    
   }
-
 
   // Función que se ejecuta al enviar el formulario
   onSubmit() {
     if (this.formulario.valid) {
-      console.log(this.formulario.value); // Muestra los valores del formulario
+      this.formulario.reset;
     } else {
       console.log('Formulario inválido');
     }

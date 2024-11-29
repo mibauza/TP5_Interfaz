@@ -61,7 +61,7 @@
   margin-top: 10px;
   font-size: 20px;
   color: #4F266A;
-  text-align: center; /* Centra el texto debajo de las imÃ¡genes */
+  text-align: start; /* Centra el texto debajo de las imÃ¡genes */
 }
 
 /* Asegura que el texto no quede oculto debajo del footer */
@@ -157,7 +157,7 @@ body {
 
 .adopta {
   display: flex;
-  height: 451px;
+  height: auto;
   align-items: center;
   justify-content: center;
   gap: 20px; /* Espaciado entre imagen y texto */
@@ -173,6 +173,7 @@ body {
 
 .adopta img {
   width: 50%; /* Imagen ocupa el 50% del ancho */
+  height: auto; /* Mantener la proporción */
   border-radius: 50%;
   object-fit: cover; /* Ajuste de imagen */
 }

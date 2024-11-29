@@ -22,6 +22,7 @@
 
 .menu {
   display: flex;
+  align-items: center;
 }
 
 .menu ul {
@@ -29,11 +30,13 @@
   list-style: none;
   font-weight: bold;
   padding: 0;
+  
 }
 
 .menu li {
   padding: 0;
   margin: 0 10px;
+  
 }
 
 .menu a {

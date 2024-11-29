@@ -14,6 +14,7 @@
     height: 80vh; /* Altura específica */
     object-fit: cover; /* Ajuste proporcional */
     display: block;
+    object-position: 100% 25%; /* Ajusta el foco: 50% horizontal (centro), 10% vertical */
 }
 
 .main-contacto {

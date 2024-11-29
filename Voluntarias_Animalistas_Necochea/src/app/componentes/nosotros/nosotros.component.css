@@ -4,11 +4,13 @@
 }
 
 .nosotros-imagen img {
-  width: 100%; /* Ancho total de la pantalla */
+  width: 100%; /* Ancho total del contenedor */
   height: 80vh; /* Altura fija */
-  object-fit: cover; /* Imagen llena el contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen dentro del contenedor */
+  object-position: 50% 25%; /* Ajusta el foco: 50% horizontal (centro), 10% vertical */
   display: block;
 }
+
 
 .principal {
   width: 85%;

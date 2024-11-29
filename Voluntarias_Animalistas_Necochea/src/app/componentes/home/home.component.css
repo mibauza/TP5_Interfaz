@@ -21,6 +21,7 @@
   width: 100%; /* Ocupa todo el ancho del contenedor */
   /* padding: 0 20px; Espaciado interno horizontal */
   box-sizing: border-box;
+  margin: 100px 0;
 }
 
 /* Estilo para cada contenido */
@@ -58,7 +59,7 @@
 .elemento p {
   width: 200px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   color: #4F266A;
   text-align: center; /* Centra el texto debajo de las imÃ¡genes */
 }
@@ -150,9 +151,9 @@ body {
 
 
 /* Opcional: Ajustar el contenido visual del footer para mantener el espaciado */
-footer {
-  margin-top: 800px; /* Agregar un espacio consistente con la separación */
-}
+/*footer {
+  margin-top: 800px; Agregar un espacio consistente con la separación 
+}*/
 
 .adopta {
   display: flex;
@@ -161,6 +162,7 @@ footer {
   justify-content: center;
   gap: 20px; /* Espaciado entre imagen y texto */
   width: 100%;
+  margin-bottom: 50px;
   /*margin: 50px auto; /* Centrado y separación con otras secciones */
   padding: 40px 20px;
   box-sizing: border-box;

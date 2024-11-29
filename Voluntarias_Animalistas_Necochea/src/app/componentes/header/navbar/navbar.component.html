@@ -5,7 +5,6 @@
     </button>
   </div>
   <div class="sub-nav">
-
     <nav [class.active]="isMenuActive" class="menu">
       <ul>
         <li>
@@ -15,7 +14,7 @@
           <a [routerLink]="['/nosotros']" routerLinkActive="router-link-active">NOSOTROS</a>
         </li>
         <li>
-          <a [routerLink]="['/adopta']" routerLinkActive="router-link-active">ADOPTA</a>
+          <a [routerLink]="['/adopta']" routerLinkActive="router-link-active" (click)="goToAdopta()">ADOPTA</a>
         </li>
         <li>
           <a [routerLink]="['/contacto']" routerLinkActive="router-link-active">CONTACTO</a>
@@ -23,11 +22,10 @@
       </ul>
     </nav>
     <div class="boton-login">
-      <button class="login">
-        <img src="../../../assets/iconos/LOGIN.png" alt="login" srcset="">
+      <button class="login" (click)="goToLogin()">
+        <img src="../../../assets/iconos/LOGIN.png" alt="login" />
       </button>
       <p>LOGIN</p>
     </div>
-
   </div>
 </div>

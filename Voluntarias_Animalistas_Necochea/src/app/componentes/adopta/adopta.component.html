@@ -17,7 +17,12 @@
                     <h2>Edad: <span>{{animal.edad}}</span></h2>
                     <h2>Género: <span>{{animal.genero}}</span></h2>
                     <h2>Estado: <span>{{animal.estado}}</span></h2>
-                    <a target="_blank" href="https://huachitos.cl/animal/300-flaco">Ver Fuente</a>
+                    <div *ngIf="isLoggedIn; else loggedOut">
+                        <a target="_blank" href="https://huachitos.cl/animal/300-flaco">Ver Fuente</a>
+                      </div>
+                      <ng-template #loggedOut>
+                        <p>Para adoptar <button type="button" class="boton" (click)="goToLoggin()">iniciar sesion</button></p>
+                      </ng-template>
                 </div>
             </div>
         </div>

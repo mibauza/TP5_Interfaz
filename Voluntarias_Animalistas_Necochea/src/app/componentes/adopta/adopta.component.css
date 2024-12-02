@@ -81,3 +81,14 @@ span, .info p{
 }
 
 
+.boton {
+  display: inline-block;
+  background-color: #3d4b63; /* Color del botón */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}

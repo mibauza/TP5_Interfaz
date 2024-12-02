@@ -1,35 +1,34 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  // Valor hardcodeado para indicar si el usuario está logueado
-  private isLoggedIn: boolean = false;
+  private isLoggedInSubject = new BehaviorSubject<boolean>(false); // Estado inicial en false
+  isLoggedIn$ = this.isLoggedInSubject.asObservable(); // Exponemos el observable
 
-  // Datos de usuario hardcodeados
-  private validUser = 'interfaces@promocion.com';  // Asegúrate de que este sea un correo electrónico válido
+  private validUser = 'interfaces@promocion.com'; 
   private validPassword = '1234';
 
   constructor() {}
 
-  // Método para simular un login (hardcodeado) con usuario y contraseña
+  // Método para simular el login
   login(username: string, password: string): boolean {
     if (username === this.validUser && password === this.validPassword) {
-      this.isLoggedIn = true;
+      this.isLoggedInSubject.next(true); // Cambia el estado
       return true; // Login exitoso
     }
-    return false; // Login fallido
-}
-
-
-  // Método para simular un logout (hardcodeado)
-  logout() {
-    this.isLoggedIn = false;
+    return false;
   }
 
-  // Método para verificar si el usuario está logueado
+  // Método para simular el logout
+  logout() {
+    this.isLoggedInSubject.next(false); // Cambia el estado
+  }
+
+  // Método para obtener el estado de autenticación
   isAuthenticated(): boolean {
-    return this.isLoggedIn;
+    return this.isLoggedInSubject.value;
   }
 }

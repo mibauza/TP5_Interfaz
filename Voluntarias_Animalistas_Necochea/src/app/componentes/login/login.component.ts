@@ -26,7 +26,7 @@ export class LoginComponent {
     if (this.loginForm?.valid) {  // Verificación de nulidad con el operador ?.
       const { email, password } = this.loginForm.value;
       if (this.authService.login(email, password)) {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/adopta']);
       } else {
         this.errorMessage = 'Usuario o contraseña incorrectos';  // Mensaje de error
       }
